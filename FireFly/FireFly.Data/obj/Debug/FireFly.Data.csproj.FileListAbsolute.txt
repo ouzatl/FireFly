@@ -1,0 +1,16 @@
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\FireFly.Data.dll.config
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\FireFly.Data.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\FireFly.Data.pdb
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\EntityFramework.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\FireFly.Common.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\FireFly.Common.pdb
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\EntityFramework.xml
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\obj\Debug\FireFly.Data.csprojAssemblyReference.cache
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\obj\Debug\FireFly.Data.csproj.CoreCompileInputs.cache
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\obj\Debug\FireFly.Data.csproj.CopyComplete
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\obj\Debug\FireFly.Data.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Data\obj\Debug\FireFly.Data.pdb

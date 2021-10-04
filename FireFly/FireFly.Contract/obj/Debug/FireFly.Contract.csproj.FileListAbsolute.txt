@@ -1,0 +1,8 @@
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\bin\Debug\FireFly.Contract.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\bin\Debug\FireFly.Contract.pdb
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\obj\Debug\FireFly.Contract.csproj.CoreCompileInputs.cache
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\obj\Debug\FireFly.Contract.csproj.CopyComplete
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\obj\Debug\FireFly.Contract.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\obj\Debug\FireFly.Contract.pdb

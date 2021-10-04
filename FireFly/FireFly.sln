@@ -3,7 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFly.UI", "FireFly.UI\FireFly.UI.csproj", "{2FFEB2B3-3316-412D-8F79-3AF89360E869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFly.Common", "FireFly.Common\FireFly.Common.csproj", "{AB69594E-039B-47AB-A8A0-4E25151D8C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFly.Service", "FireFly.Service\FireFly.Service.csproj", "{6EEA0C50-945B-4E3C-BFBA-482A6AE80785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFly.Data", "FireFly.Data\FireFly.Data.csproj", "{44D9879A-4E04-4D58-A883-AB9E57C473CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFly.Test", "FireFly.Test\FireFly.Test.csproj", "{B6FD2E5E-AC24-4178-B035-BE54E63A0E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFly.BackgroundService", "FireFly.BackgroundService\FireFly.BackgroundService.csproj", "{B28321F7-58F6-4178-80B3-AC286F9EFBD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireFly.Contract", "FireFly.Contract\FireFly.Contract.csproj", "{15E5455A-3502-40F7-AAE9-794386AC0D04}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FFEB2B3-3316-412D-8F79-3AF89360E869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFEB2B3-3316-412D-8F79-3AF89360E869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFEB2B3-3316-412D-8F79-3AF89360E869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFEB2B3-3316-412D-8F79-3AF89360E869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB69594E-039B-47AB-A8A0-4E25151D8C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB69594E-039B-47AB-A8A0-4E25151D8C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB69594E-039B-47AB-A8A0-4E25151D8C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB69594E-039B-47AB-A8A0-4E25151D8C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EEA0C50-945B-4E3C-BFBA-482A6AE80785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EEA0C50-945B-4E3C-BFBA-482A6AE80785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EEA0C50-945B-4E3C-BFBA-482A6AE80785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EEA0C50-945B-4E3C-BFBA-482A6AE80785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44D9879A-4E04-4D58-A883-AB9E57C473CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44D9879A-4E04-4D58-A883-AB9E57C473CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44D9879A-4E04-4D58-A883-AB9E57C473CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44D9879A-4E04-4D58-A883-AB9E57C473CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6FD2E5E-AC24-4178-B035-BE54E63A0E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FD2E5E-AC24-4178-B035-BE54E63A0E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FD2E5E-AC24-4178-B035-BE54E63A0E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FD2E5E-AC24-4178-B035-BE54E63A0E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28321F7-58F6-4178-80B3-AC286F9EFBD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28321F7-58F6-4178-80B3-AC286F9EFBD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28321F7-58F6-4178-80B3-AC286F9EFBD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28321F7-58F6-4178-80B3-AC286F9EFBD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E5455A-3502-40F7-AAE9-794386AC0D04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E5455A-3502-40F7-AAE9-794386AC0D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E5455A-3502-40F7-AAE9-794386AC0D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E5455A-3502-40F7-AAE9-794386AC0D04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
