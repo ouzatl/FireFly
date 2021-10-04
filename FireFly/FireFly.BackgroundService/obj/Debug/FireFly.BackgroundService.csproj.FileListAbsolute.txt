@@ -1,0 +1,9 @@
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.BackgroundService\bin\Debug\FireFly.BackgroundService.exe.config
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.BackgroundService\bin\Debug\FireFly.BackgroundService.exe
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.BackgroundService\bin\Debug\FireFly.BackgroundService.pdb
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.BackgroundService\obj\Debug\FireFly.BackgroundService.csprojAssemblyReference.cache
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.BackgroundService\obj\Debug\FireFly.BackgroundService.ProjectInstaller.resources
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.BackgroundService\obj\Debug\FireFly.BackgroundService.csproj.GenerateResource.cache
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.BackgroundService\obj\Debug\FireFly.BackgroundService.csproj.CoreCompileInputs.cache
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.BackgroundService\obj\Debug\FireFly.BackgroundService.exe
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.BackgroundService\obj\Debug\FireFly.BackgroundService.pdb

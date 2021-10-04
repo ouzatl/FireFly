@@ -1,91 +1,88 @@
-﻿using FireFly.Contract.Authentication;
+﻿using FireFly.Common.Enums;
+using FireFly.Common.Helpers;
+using FireFly.Contract.Authentication;
 using FireFly.Service.Authentication;
-using System.Text.RegularExpressions;
 using System.Windows;
 
 namespace FireFly.UI
 {
     public partial class Registration : Window
     {
-        AuthenticationService authService;
+        private AuthenticationService authService;
+        private VideoPlayer videoPlayer;
+        private AuthenticationHelper authHelper;
 
         public Registration()
         {
             InitializeComponent();
             authService = new AuthenticationService();
-
+            videoPlayer = new VideoPlayer();
+            authHelper = new AuthenticationHelper();
         }
 
-        VideoPlayer videoPlayer = new VideoPlayer();
 
-        private void Login_Click(object sender, RoutedEventArgs e)
+        private void LoginPageButton(object sender, RoutedEventArgs e)
         {
             Login login = new Login();
             login.Show();
             Close();
         }
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void ResetButton(object sender, RoutedEventArgs e)
         {
             Reset();
         }
 
         public void Reset()
         {
-            textBoxEmail.Text = "";
-            passwordBox1.Password = "";
-            passwordBoxConfirm.Password = "";
+            textBoxEmail.Text = string.Empty;
+            passwordBox.Password = string.Empty;
+            passwordBoxConfirm.Password = string.Empty;
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void CancelButton(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
-        private void Submit_Click(object sender, RoutedEventArgs e)
+        private async void SubmitButton(object sender, RoutedEventArgs e)
         {
-            if (textBoxEmail.Text.Length == 0)
+
+            if (!authHelper.IsEmailValid(textBoxEmail.Text))
             {
-                errormessage.Text = "Enter an email.";
-                textBoxEmail.Focus();
-            }
-            else if (!Regex.IsMatch(textBoxEmail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
-            {
-                errormessage.Text = "Enter a valid email.";
+                errormessage.Text = EnumHelper.GetDescription<MessageEnum>(MessageEnum.InvalidEmail);
                 textBoxEmail.Select(0, textBoxEmail.Text.Length);
                 textBoxEmail.Focus();
             }
             else
             {
-                string email = textBoxEmail.Text;
-                string password = passwordBox1.Password;
-                if (passwordBox1.Password.Length == 0)
+                if (passwordBox.Password.Length == 0)
                 {
-                    errormessage.Text = "Enter password.";
-                    passwordBox1.Focus();
+                    errormessage.Text = EnumHelper.GetDescription<MessageEnum>(MessageEnum.EnterPassword);
+                    passwordBox.Focus();
                 }
                 else if (passwordBoxConfirm.Password.Length == 0)
                 {
-                    errormessage.Text = "Enter Confirm password.";
+                    errormessage.Text = EnumHelper.GetDescription<MessageEnum>(MessageEnum.InvalidEmail);
                     passwordBoxConfirm.Focus();
                 }
-                else if (passwordBox1.Password != passwordBoxConfirm.Password)
+                else if (passwordBox.Password != passwordBoxConfirm.Password)
                 {
-                    errormessage.Text = "Confirm password must be same as password.";
+                    errormessage.Text = EnumHelper.GetDescription<MessageEnum>(MessageEnum.InvalidPasswordConfirm);
                     passwordBoxConfirm.Focus();
                 }
                 else
                 {
                     var contract = new AuthenticationContract {
                         Email = textBoxEmail.Text,
-                        Password = passwordBox1.Password
+                        Password = passwordBox.Password
                     };
 
-                    var result = authService.Register(contract);
+                    var result = await authService.Register(contract);
 
                     if (result)
                         videoPlayer.Show();
                     else
-                        errormessage.Text = "Sorry! Please enter different email.";
+                        errormessage.Text = EnumHelper.GetDescription<MessageEnum>(MessageEnum.UnSuccessfulRegister);
                 }
             }
         }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FireFly.UI"
         mc:Ignorable="d"
-        Title="VideoPlayer" Height="450" Width="800">
+        Title="VideoPlayer" Height="450" Width="806.767">
     <Grid>
         <MediaElement HorizontalAlignment="Left" Height="339" Name="mediaElement" LoadedBehavior="Manual" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
         <Button Content="Play" HorizontalAlignment="Left" Margin="28,371,0,0" VerticalAlignment="Top" Width="71" Height="38" Click="PlayButton"/>

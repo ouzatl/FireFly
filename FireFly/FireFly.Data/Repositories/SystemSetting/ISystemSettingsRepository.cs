@@ -8,6 +8,6 @@ namespace FireFly.Data.Repositories.SystemSetting
     {
         Task<IEnumerable<SystemSettings>> GetSystemSettings(string groupKey);
 
-        Task<IEnumerable<SystemSettings>> GetSystemSetting(string key);
+        Task<SystemSettings> GetSystemSetting(string key);
     }
 }

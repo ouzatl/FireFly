@@ -1,30 +1,32 @@
-﻿using FireFly.Common.Helpers;
+﻿using FireFly.Common.Constants;
+using FireFly.Common.Helpers;
 using FireFly.Contract.Authentication;
 using FireFly.Data;
-using FireFly.Data.Repositories.SystemSetting;
-using FireFly.Service.SystemSettings;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace FireFly.Service.Authentication
 {
-    public class AuthenticationService
+    public class AuthenticationService : IAuthenticationService
     {
-        private UnitOfWork unitOfWork = new UnitOfWork(new FireFlyContext());
-        HttpHelper httpHelper;
+        private UnitOfWork unitOfWork;
+        private HttpHelper httpHelper;
 
         public AuthenticationService()
         {
             httpHelper = new HttpHelper();
+            unitOfWork = new UnitOfWork(new FireFlyContext());
         }
 
         public async Task<bool> Login(AuthenticationContract contract)
         {
-            var settings =await unitOfWork.SystemSettingsRepository.GetSystemSetting("REQRES");
+            var settings = await unitOfWork.SystemSettingsRepository.GetSystemSettings(ReqResConstant.reqres);
             var result = httpHelper.PostRequest<
                 AuthenticationContract,
                 AuthenticationResponseContract>
-                (string.Concat(settings.Where(x=> x.Key == "URL"), settings.Where(x => x.Key == "REGISTERURI")), 
+                (string.Concat(
+                     settings.FirstOrDefault(x => x.Key == ReqResConstant.reqresUrl).Value,
+                     settings.FirstOrDefault(x => x.Key == ReqResConstant.loginUri).Value),
                 contract).Result;
 
             if (result != null && !string.IsNullOrEmpty(result.Token))
@@ -35,11 +37,14 @@ namespace FireFly.Service.Authentication
 
         public async Task<bool> Register(AuthenticationContract contract)
         {
-            var settings = await unitOfWork.SystemSettingsRepository.GetSystemSetting("REQRES");
+            var settings = await unitOfWork.SystemSettingsRepository.GetSystemSettings(ReqResConstant.reqres);
             var result = httpHelper.PostRequest<
                 AuthenticationContract,
                 AuthenticationResponseContract>
-                (string.Concat(settings.Where(x => x.Key == "URL"), settings.Where(x => x.Key == "REGISTERURI"), contract);
+                (string.Concat(
+                    settings.FirstOrDefault(x => x.Key == ReqResConstant.reqresUrl).Value,
+                    settings.FirstOrDefault(x => x.Key == ReqResConstant.registerUri).Value),
+                contract).Result;
 
             if (result != null && !string.IsNullOrEmpty(result.Token))
                 return true;

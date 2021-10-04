@@ -22,27 +22,27 @@ namespace FireFly.Data.Repositories.SystemSetting
             //    .ToListAsync();
 
             var systemSettingList = new List<SystemSettings> {
-                new SystemSettings { GroupKey = "REQRES", Key = "URL", Value = "https://reqres.in/" },
+                new SystemSettings { GroupKey = "REQRES", Key = "REQRESURL", Value = "https://reqres.in/" },
                 new SystemSettings { GroupKey = "REQRES", Key = "REGISTERURI", Value = "api/register" },
                 new SystemSettings { GroupKey = "REQRES", Key = "LOGINURI", Value = "api/login" }
             };
-            var result = systemSettingList.Where(x => x.GroupKey == groupKey);
+            var result = systemSettingList.Where(x => x.GroupKey == groupKey).ToList();
 
             return result;
         }
 
-        public async Task<IEnumerable<SystemSettings>> GetSystemSetting(string key)
+        public async Task<SystemSettings> GetSystemSetting(string key)
         {
             //var result = await _dbContext.Set<SystemSettings>()
-            //    .Where(x => x.GroupKey == key)
-            //    .ToListAsync();
+            //    .FirstOrDefaultAsync(x => x.GroupKey == key);
 
             var systemSettingList = new List<SystemSettings> {
-                new SystemSettings { GroupKey = "REQRES", Key = "URL", Value = "https://reqres.in/" },
+                new SystemSettings { GroupKey = "REQRES", Key = "REQRESURL", Value = "https://reqres.in/" },
                 new SystemSettings { GroupKey = "REQRES", Key = "REGISTERURI", Value = "api/register" },
                 new SystemSettings { GroupKey = "REQRES", Key = "LOGINURI", Value = "api/login" }
             };
-            var result  =  systemSettingList.Where(x => x.Key == key);
+
+            var result = systemSettingList.FirstOrDefault(x => x.Key == key);
 
             return result;
         }

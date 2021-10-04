@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentication\AuthenticationService.cs" />
+    <Compile Include="Authentication\IAuthenticationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemSettings\ISystemSettingsService.cs" />
     <Compile Include="SystemSettings\SystemSettingsService.cs" />
   </ItemGroup>
   <ItemGroup>

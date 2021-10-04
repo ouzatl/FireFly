@@ -7,3 +7,13 @@ C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\obj\Debug\FireFly.Common.c
 C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\obj\Debug\FireFly.Common.csproj.CopyComplete
 C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\obj\Debug\FireFly.Common.dll
 C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\obj\Debug\FireFly.Common.pdb
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Common\bin\Debug\System.Threading.Tasks.Extensions.xml

@@ -1,9 +1,8 @@
-﻿using FireFly.Data.Repository;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 
 namespace FireFly.Data.Repositories.Authentication
 {
-    public class AuthenticationRepository : BaseRepository<FireFly.Data.Models.Authentication>
+    public class AuthenticationRepository : BaseRepository<FireFly.Data.Models.Authentication>, IAuthenticationRepository
     {
         private readonly DbContext _dbContext;
 

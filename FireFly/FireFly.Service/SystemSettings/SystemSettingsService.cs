@@ -1,10 +1,9 @@
 ﻿namespace FireFly.Service.SystemSettings
 {
-    public class SystemSettingsService
+    public class SystemSettingsService : ISystemSettingsService
     {
         public SystemSettingsService()
         {
-
         }
     }
 }

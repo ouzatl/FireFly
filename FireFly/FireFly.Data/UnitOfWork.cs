@@ -12,7 +12,6 @@ namespace FireFly.Data
             _context = context;
             AuthenticationRepository = new AuthenticationRepository(_context);
             SystemSettingsRepository = new SystemSettingsRepository(_context);
-
         }
 
         public IAuthenticationRepository AuthenticationRepository { get; private set; }
