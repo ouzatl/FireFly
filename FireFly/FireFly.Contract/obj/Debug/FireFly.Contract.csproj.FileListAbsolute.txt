@@ -6,3 +6,4 @@ C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\obj\Debug\FireFly.Contra
 C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\obj\Debug\FireFly.Contract.csproj.CopyComplete
 C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\obj\Debug\FireFly.Contract.dll
 C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\obj\Debug\FireFly.Contract.pdb
+C:\Users\Oğuz\Desktop\FireFly\FireFly\FireFly.Contract\obj\Debug\FireFly.Contract.csprojAssemblyReference.cache
